@@ -27,6 +27,8 @@ int _char(va_list ch);
 int _string(va_list st);
 int _strlen(char *str);
 int _percent(va_list per);
+int _print(va_list n);
+void print_number(int);
 
 
 #endif
