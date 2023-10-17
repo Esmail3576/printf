@@ -12,6 +12,8 @@ int _printf(const char *format, ...)
 		{"%c", _char},
 		{"%s", _string},
 		{"%%", _percent},
+		{"%d", _print},
+		{"%i", _print},
 	};
 
 	va_list list_args;
@@ -23,7 +25,7 @@ int _printf(const char *format, ...)
 
 	while (format[i] != '\0')
 	{
-		for (j = 0; j < 3; j++)
+		for (j = 0; j < 5; j++)
 		{
 			if (a[j].it[0] == format[i] && a[j].it[1] == format[i + 1])
 			{
